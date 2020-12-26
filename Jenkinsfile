@@ -5,6 +5,6 @@ git 'https://github.com/vijay2181/nexus.git'
 }
 stage('compile-package') {
   def mvnHome =  tool name: 'MAVEN', type: 'maven'
-  sh "${mvnHome}/bin package"
+  sh "${mvnHome} package"
 }
 }
